@@ -28,8 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.paraTextBox1 = new WinStoreWaterSystem.ParaTextBox();
             this.uPanel1 = new WinStoreWaterSystem.UPanel();
             this.SuspendLayout();
+            // 
+            // paraTextBox1
+            // 
+            this.paraTextBox1.AutoSize = true;
+            this.paraTextBox1.DataVal = "12.5";
+            this.paraTextBox1.Location = new System.Drawing.Point(210, 9);
+            this.paraTextBox1.Name = "paraTextBox1";
+            this.paraTextBox1.Size = new System.Drawing.Size(62, 18);
+            this.paraTextBox1.TabIndex = 1;
+            this.paraTextBox1.Text = "12.5 m";
+            this.paraTextBox1.VarName = null;
             // 
             // uPanel1
             // 
@@ -48,16 +60,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1303, 739);
+            this.Controls.Add(this.paraTextBox1);
             this.Controls.Add(this.uPanel1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private UPanel uPanel1;
+        private ParaTextBox paraTextBox1;
     }
 }
 

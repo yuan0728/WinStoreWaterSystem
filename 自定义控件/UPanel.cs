@@ -196,7 +196,6 @@ namespace WinStoreWaterSystem
                 {
                     Brush b = new SolidBrush(borderColor);
                     g.FillRectangle(b, rect); 
-                    // Test
                 }
             }
         }
