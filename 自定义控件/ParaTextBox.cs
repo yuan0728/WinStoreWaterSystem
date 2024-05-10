@@ -35,7 +35,7 @@ namespace WinStoreWaterSystem
                 }
             }
         }
-        private string unit;
+        private string unit = "m";
         [DefaultValue(typeof(string), "m"), Description("单位")]
         public string Unit
         {

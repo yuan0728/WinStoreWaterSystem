@@ -28,9 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.uLightControl1 = new WinStoreWaterSystem.ULightControl();
             this.paraTextBox1 = new WinStoreWaterSystem.ParaTextBox();
             this.uPanel1 = new WinStoreWaterSystem.UPanel();
             this.SuspendLayout();
+            // 
+            // uLightControl1
+            // 
+            this.uLightControl1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uLightControl1.Location = new System.Drawing.Point(269, 9);
+            this.uLightControl1.Name = "uLightControl1";
+            this.uLightControl1.Size = new System.Drawing.Size(80, 80);
+            this.uLightControl1.TabIndex = 2;
+            this.uLightControl1.VarName = null;
             // 
             // paraTextBox1
             // 
@@ -40,7 +50,8 @@
             this.paraTextBox1.Name = "paraTextBox1";
             this.paraTextBox1.Size = new System.Drawing.Size(62, 18);
             this.paraTextBox1.TabIndex = 1;
-            this.paraTextBox1.Text = "12.5 m";
+            this.paraTextBox1.Text = "12.5 V";
+            this.paraTextBox1.Unit = "V";
             this.paraTextBox1.VarName = null;
             // 
             // uPanel1
@@ -60,6 +71,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1303, 739);
+            this.Controls.Add(this.uLightControl1);
             this.Controls.Add(this.paraTextBox1);
             this.Controls.Add(this.uPanel1);
             this.Name = "Form1";
@@ -73,6 +85,7 @@
 
         private UPanel uPanel1;
         private ParaTextBox paraTextBox1;
+        private ULightControl uLightControl1;
     }
 }
 
