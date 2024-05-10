@@ -62,6 +62,12 @@
       <DependentUpon>ParaTextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="自定义控件\ParaTextBoxArgs.cs" />
+    <Compile Include="自定义控件\UCWaterTank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\UCWaterTank.Designer.cs">
+      <DependentUpon>UCWaterTank.cs</DependentUpon>
+    </Compile>
     <Compile Include="自定义控件\ULightControl.cs">
       <SubType>UserControl</SubType>
     </Compile>

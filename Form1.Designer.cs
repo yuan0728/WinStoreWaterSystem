@@ -28,15 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ucWaterTank1 = new WinStoreWaterSystem.UCWaterTank();
             this.uLightControl1 = new WinStoreWaterSystem.ULightControl();
             this.paraTextBox1 = new WinStoreWaterSystem.ParaTextBox();
             this.uPanel1 = new WinStoreWaterSystem.UPanel();
             this.SuspendLayout();
             // 
+            // ucWaterTank1
+            // 
+            this.ucWaterTank1.Location = new System.Drawing.Point(383, 2);
+            this.ucWaterTank1.Name = "ucWaterTank1";
+            this.ucWaterTank1.RectWidth = 2;
+            this.ucWaterTank1.Size = new System.Drawing.Size(93, 116);
+            this.ucWaterTank1.TabIndex = 3;
+            this.ucWaterTank1.Value = 70;
+            // 
             // uLightControl1
             // 
             this.uLightControl1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uLightControl1.Location = new System.Drawing.Point(269, 9);
+            this.uLightControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uLightControl1.Name = "uLightControl1";
             this.uLightControl1.Size = new System.Drawing.Size(80, 80);
             this.uLightControl1.TabIndex = 2;
@@ -71,11 +82,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1303, 739);
+            this.Controls.Add(this.ucWaterTank1);
             this.Controls.Add(this.uLightControl1);
             this.Controls.Add(this.paraTextBox1);
             this.Controls.Add(this.uPanel1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "自动储水系统";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,6 +98,7 @@
         private UPanel uPanel1;
         private ParaTextBox paraTextBox1;
         private ULightControl uLightControl1;
+        private UCWaterTank ucWaterTank1;
     }
 }
 
