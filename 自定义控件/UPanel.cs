@@ -15,7 +15,7 @@ namespace WinStoreWaterSystem
     /// 圆角面板
     /// </summary>
     public partial class UPanel : Panel
-    {
+    { 
         public UPanel()
         {
             InitializeComponent();
