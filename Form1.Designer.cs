@@ -28,12 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.uSwitch1 = new WinStoreWaterSystem.USwitch();
             this.ucAlarmControl1 = new WinStoreWaterSystem.UCAlarmControl();
             this.ucWaterTank1 = new WinStoreWaterSystem.UCWaterTank();
             this.uLightControl1 = new WinStoreWaterSystem.ULightControl();
             this.paraTextBox1 = new WinStoreWaterSystem.ParaTextBox();
             this.uPanel1 = new WinStoreWaterSystem.UPanel();
             this.SuspendLayout();
+            // 
+            // uSwitch1
+            // 
+            this.uSwitch1.Checked = false;
+            this.uSwitch1.Location = new System.Drawing.Point(638, 2);
+            this.uSwitch1.Name = "uSwitch1";
+            this.uSwitch1.Size = new System.Drawing.Size(196, 74);
+            this.uSwitch1.SwitchType = WinStoreWaterSystem.SwitchType.Line;
+            this.uSwitch1.TabIndex = 5;
+            this.uSwitch1.Texts = new string[] {
+        "开",
+        "关"};
             // 
             // ucAlarmControl1
             // 
@@ -95,6 +108,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1303, 739);
+            this.Controls.Add(this.uSwitch1);
             this.Controls.Add(this.ucAlarmControl1);
             this.Controls.Add(this.ucWaterTank1);
             this.Controls.Add(this.uLightControl1);
@@ -114,6 +128,7 @@
         private ULightControl uLightControl1;
         private UCWaterTank ucWaterTank1;
         private UCAlarmControl ucAlarmControl1;
+        private USwitch uSwitch1;
     }
 }
 

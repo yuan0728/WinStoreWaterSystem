@@ -86,6 +86,12 @@
     <Compile Include="自定义控件\UPanel.Designer.cs">
       <DependentUpon>UPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="自定义控件\USwitch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\USwitch.Designer.cs">
+      <DependentUpon>USwitch.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="自定义控件\UCAlarmControl.resx">
       <DependentUpon>UCAlarmControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\USwitch.resx">
+      <DependentUpon>USwitch.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
