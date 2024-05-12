@@ -297,7 +297,7 @@ namespace WinStoreWaterSystem
                     //内圆直径：(Height - 2 - 4) / 2  (高-2-4)/2
                     g.FillEllipse(Brushes.White, new Rectangle(Width - 2 - (Height - 2 - 4) / 2 - ((Height - 2 - 4) / 2) / 2 - 4, (Height - 2 - (Height - 2 - 4) / 2) / 2 + 1, (Height - 2 - 4) / 2, (Height - 2 - 4) / 2));
                 }
-                else //关时的外观
+                else
                 {
                     //填充左边外圆
                     g.FillEllipse(new SolidBrush(fillColor), new Rectangle(1 + 2, 1 + 2, Height - 2 - 4, Height - 2 - 4));
