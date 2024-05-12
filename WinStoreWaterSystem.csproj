@@ -62,6 +62,12 @@
       <DependentUpon>ParaTextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="自定义控件\ParaTextBoxArgs.cs" />
+    <Compile Include="自定义控件\UCAlarmControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\UCAlarmControl.Designer.cs">
+      <DependentUpon>UCAlarmControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="自定义控件\UCWaterTank.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     </Compile>
     <EmbeddedResource Include="自定义控件\ParaTextBox.resx">
       <DependentUpon>ParaTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\UCAlarmControl.resx">
+      <DependentUpon>UCAlarmControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

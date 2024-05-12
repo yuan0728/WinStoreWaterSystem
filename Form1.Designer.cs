@@ -28,11 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ucAlarmControl1 = new WinStoreWaterSystem.UCAlarmControl();
             this.ucWaterTank1 = new WinStoreWaterSystem.UCWaterTank();
             this.uLightControl1 = new WinStoreWaterSystem.ULightControl();
             this.paraTextBox1 = new WinStoreWaterSystem.ParaTextBox();
             this.uPanel1 = new WinStoreWaterSystem.UPanel();
             this.SuspendLayout();
+            // 
+            // ucAlarmControl1
+            // 
+            this.ucAlarmControl1.AlarmLightColor = new System.Drawing.Color[] {
+        System.Drawing.Color.Red,
+        System.Drawing.Color.Blue};
+            this.ucAlarmControl1.Location = new System.Drawing.Point(503, 2);
+            this.ucAlarmControl1.Name = "ucAlarmControl1";
+            this.ucAlarmControl1.Size = new System.Drawing.Size(103, 116);
+            this.ucAlarmControl1.TabIndex = 4;
+            this.ucAlarmControl1.TwinkInterval = 100;
+            this.ucAlarmControl1.VarName = null;
             // 
             // ucWaterTank1
             // 
@@ -82,6 +95,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1303, 739);
+            this.Controls.Add(this.ucAlarmControl1);
             this.Controls.Add(this.ucWaterTank1);
             this.Controls.Add(this.uLightControl1);
             this.Controls.Add(this.paraTextBox1);
@@ -99,6 +113,7 @@
         private ParaTextBox paraTextBox1;
         private ULightControl uLightControl1;
         private UCWaterTank ucWaterTank1;
+        private UCAlarmControl ucAlarmControl1;
     }
 }
 
