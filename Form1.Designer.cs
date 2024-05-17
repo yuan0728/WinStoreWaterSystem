@@ -34,6 +34,7 @@
             this.uLightControl1 = new WinStoreWaterSystem.ULightControl();
             this.paraTextBox1 = new WinStoreWaterSystem.ParaTextBox();
             this.uPanel1 = new WinStoreWaterSystem.UPanel();
+            this.ucPipe1 = new WinStoreWaterSystem.UCPipe();
             this.SuspendLayout();
             // 
             // uSwitch1
@@ -103,11 +104,22 @@
             this.uPanel1.Size = new System.Drawing.Size(202, 116);
             this.uPanel1.TabIndex = 0;
             // 
+            // ucPipe1
+            // 
+            this.ucPipe1.FlowDirection = WinStoreWaterSystem.FlowDirection.Backward;
+            this.ucPipe1.IsFlow = true;
+            this.ucPipe1.Location = new System.Drawing.Point(597, 226);
+            this.ucPipe1.Name = "ucPipe1";
+            this.ucPipe1.PipeStyle = WinStoreWaterSystem.PipeStyle.Horizontal_Up_None;
+            this.ucPipe1.Size = new System.Drawing.Size(200, 30);
+            this.ucPipe1.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1303, 739);
+            this.Controls.Add(this.ucPipe1);
             this.Controls.Add(this.uSwitch1);
             this.Controls.Add(this.ucAlarmControl1);
             this.Controls.Add(this.ucWaterTank1);
@@ -129,6 +141,7 @@
         private UCWaterTank ucWaterTank1;
         private UCAlarmControl ucAlarmControl1;
         private USwitch uSwitch1;
+        private UCPipe ucPipe1;
     }
 }
 

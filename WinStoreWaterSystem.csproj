@@ -68,6 +68,12 @@
     <Compile Include="自定义控件\UCAlarmControl.Designer.cs">
       <DependentUpon>UCAlarmControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="自定义控件\UCPipe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\UCPipe.Designer.cs">
+      <DependentUpon>UCPipe.cs</DependentUpon>
+    </Compile>
     <Compile Include="自定义控件\UCWaterTank.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="自定义控件\UCAlarmControl.resx">
       <DependentUpon>UCAlarmControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\UCPipe.resx">
+      <DependentUpon>UCPipe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="自定义控件\USwitch.resx">
       <DependentUpon>USwitch.cs</DependentUpon>
