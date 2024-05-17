@@ -92,6 +92,12 @@
     <Compile Include="自定义控件\UPanel.Designer.cs">
       <DependentUpon>UPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="自定义控件\UPump.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\UPump.Designer.cs">
+      <DependentUpon>UPump.cs</DependentUpon>
+    </Compile>
     <Compile Include="自定义控件\USwitch.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -109,6 +115,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="自定义控件\ParaTextBox.resx">
       <DependentUpon>ParaTextBox.cs</DependentUpon>
@@ -118,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="自定义控件\UCPipe.resx">
       <DependentUpon>UCPipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\UPump.resx">
+      <DependentUpon>UPump.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="自定义控件\USwitch.resx">
       <DependentUpon>USwitch.cs</DependentUpon>
@@ -134,6 +144,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jdb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jdb1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
