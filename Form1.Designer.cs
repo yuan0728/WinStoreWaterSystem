@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.uArrowControl1 = new WinStoreWaterSystem.UArrowControl();
+            this.uPump1 = new WinStoreWaterSystem.UPump();
             this.ucPipe1 = new WinStoreWaterSystem.UCPipe();
             this.uSwitch1 = new WinStoreWaterSystem.USwitch();
             this.ucAlarmControl1 = new WinStoreWaterSystem.UCAlarmControl();
@@ -35,8 +37,25 @@
             this.uLightControl1 = new WinStoreWaterSystem.ULightControl();
             this.paraTextBox1 = new WinStoreWaterSystem.ParaTextBox();
             this.uPanel1 = new WinStoreWaterSystem.UPanel();
-            this.uPump1 = new WinStoreWaterSystem.UPump();
             this.SuspendLayout();
+            // 
+            // uArrowControl1
+            // 
+            this.uArrowControl1.ArrowColor = System.Drawing.Color.Blue;
+            this.uArrowControl1.Direction = WinStoreWaterSystem.ArrowDirection.Top;
+            this.uArrowControl1.Location = new System.Drawing.Point(278, 171);
+            this.uArrowControl1.Name = "uArrowControl1";
+            this.uArrowControl1.Size = new System.Drawing.Size(50, 100);
+            this.uArrowControl1.TabIndex = 8;
+            // 
+            // uPump1
+            // 
+            this.uPump1.ActualState = true;
+            this.uPump1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.uPump1.Location = new System.Drawing.Point(2, 124);
+            this.uPump1.Name = "uPump1";
+            this.uPump1.Size = new System.Drawing.Size(235, 366);
+            this.uPump1.TabIndex = 7;
             // 
             // ucPipe1
             // 
@@ -115,20 +134,12 @@
             this.uPanel1.Size = new System.Drawing.Size(202, 116);
             this.uPanel1.TabIndex = 0;
             // 
-            // uPump1
-            // 
-            this.uPump1.ActualState = true;
-            this.uPump1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.uPump1.Location = new System.Drawing.Point(2, 124);
-            this.uPump1.Name = "uPump1";
-            this.uPump1.Size = new System.Drawing.Size(235, 366);
-            this.uPump1.TabIndex = 7;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1303, 739);
+            this.Controls.Add(this.uArrowControl1);
             this.Controls.Add(this.uPump1);
             this.Controls.Add(this.ucPipe1);
             this.Controls.Add(this.uSwitch1);
@@ -154,6 +165,7 @@
         private USwitch uSwitch1;
         private UCPipe ucPipe1;
         private UPump uPump1;
+        private UArrowControl uArrowControl1;
     }
 }
 

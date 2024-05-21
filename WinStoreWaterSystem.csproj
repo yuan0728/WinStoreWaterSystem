@@ -62,6 +62,12 @@
       <DependentUpon>ParaTextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="自定义控件\ParaTextBoxArgs.cs" />
+    <Compile Include="自定义控件\UArrowControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\UArrowControl.Designer.cs">
+      <DependentUpon>UArrowControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="自定义控件\UCAlarmControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
