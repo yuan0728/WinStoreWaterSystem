@@ -37,6 +37,7 @@
             this.uLightControl1 = new WinStoreWaterSystem.ULightControl();
             this.paraTextBox1 = new WinStoreWaterSystem.ParaTextBox();
             this.uPanel1 = new WinStoreWaterSystem.UPanel();
+            this.uInstrumentControl1 = new WinStoreWaterSystem.UInstrumentControl();
             this.SuspendLayout();
             // 
             // uArrowControl1
@@ -134,11 +135,28 @@
             this.uPanel1.Size = new System.Drawing.Size(202, 116);
             this.uPanel1.TabIndex = 0;
             // 
+            // uInstrumentControl1
+            // 
+            this.uInstrumentControl1.BoundaryLineColor = System.Drawing.Color.RosyBrown;
+            this.uInstrumentControl1.ExternalRoundColor = System.Drawing.Color.RoyalBlue;
+            this.uInstrumentControl1.InsideRoundColor = System.Drawing.Color.RosyBrown;
+            this.uInstrumentControl1.Location = new System.Drawing.Point(573, 222);
+            this.uInstrumentControl1.Name = "uInstrumentControl1";
+            this.uInstrumentControl1.Size = new System.Drawing.Size(319, 194);
+            this.uInstrumentControl1.TabIndex = 9;
+            this.uInstrumentControl1.TextFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uInstrumentControl1.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1303, 739);
+            this.Controls.Add(this.uInstrumentControl1);
             this.Controls.Add(this.uArrowControl1);
             this.Controls.Add(this.uPump1);
             this.Controls.Add(this.ucPipe1);
@@ -166,6 +184,7 @@
         private UCPipe ucPipe1;
         private UPump uPump1;
         private UArrowControl uArrowControl1;
+        private UInstrumentControl uInstrumentControl1;
     }
 }
 
