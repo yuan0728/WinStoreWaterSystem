@@ -1,6 +1,6 @@
 ﻿namespace WinStoreWaterSystem
 {
-    partial class Form1
+    partial class Sample
     {
         /// <summary>
         /// 必需的设计器变量。

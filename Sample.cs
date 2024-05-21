@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace WinStoreWaterSystem
 {
-    public partial class Form1 : Form
+    public partial class Sample : Form
     {
-        public Form1()
+        public Sample()
         {
             InitializeComponent();
+
         }
     }
 }

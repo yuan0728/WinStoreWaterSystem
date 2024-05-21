@@ -28,84 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblName = new System.Windows.Forms.Label();
             this.uLight = new WinStoreWaterSystem.ULightControl();
-            this.uSwitch = new WinStoreWaterSystem.USwitch();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.uswitchPump = new WinStoreWaterSystem.USwitch();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox2
+            // pictureBox1
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::WinStoreWaterSystem.Properties.Resources.jdb;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 66);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(256, 216);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox1.Image = global::WinStoreWaterSystem.Properties.Resources.jdb;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(167, 108);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // lblName
             // 
             this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblName.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblName.Location = new System.Drawing.Point(27, 310);
+            this.lblName.Location = new System.Drawing.Point(23, 158);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(68, 24);
-            this.lblName.TabIndex = 2;
+            this.lblName.Size = new System.Drawing.Size(71, 25);
+            this.lblName.TabIndex = 3;
             this.lblName.Text = "1#水泵";
             // 
             // uLight
             // 
             this.uLight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.uLight.BackColor = System.Drawing.Color.Transparent;
             this.uLight.LightfocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.uLight.LightNormalColor = System.Drawing.Color.Gray;
-            this.uLight.Location = new System.Drawing.Point(194, 10);
+            this.uLight.Location = new System.Drawing.Point(119, 3);
             this.uLight.Name = "uLight";
-            this.uLight.Size = new System.Drawing.Size(50, 50);
+            this.uLight.Size = new System.Drawing.Size(42, 38);
             this.uLight.StateText = "";
-            this.uLight.TabIndex = 3;
+            this.uLight.TabIndex = 2;
             this.uLight.VarName = null;
             // 
-            // uSwitch
+            // uswitchPump
             // 
-            this.uSwitch.Checked = true;
-            this.uSwitch.Location = new System.Drawing.Point(3, 14);
-            this.uSwitch.Name = "uSwitch";
-            this.uSwitch.Size = new System.Drawing.Size(134, 40);
-            this.uSwitch.TabIndex = 1;
-            this.uSwitch.Texts = new string[] {
-        "已开启",
+            this.uswitchPump.Checked = false;
+            this.uswitchPump.Font = new System.Drawing.Font("华文宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uswitchPump.Location = new System.Drawing.Point(12, 9);
+            this.uswitchPump.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.uswitchPump.Name = "uswitchPump";
+            this.uswitchPump.Size = new System.Drawing.Size(94, 26);
+            this.uswitchPump.TabIndex = 1;
+            this.uswitchPump.Texts = new string[] {
+        "已运行",
         "已停止"};
-            this.uSwitch.TrueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.uswitchPump.TrueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.uswitchPump.Click += new System.EventHandler(this.uswitchPump_Click);
             // 
             // UPump
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Controls.Add(this.uLight);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Controls.Add(this.lblName);
-            this.Controls.Add(this.uSwitch);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.uLight);
+            this.Controls.Add(this.uswitchPump);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "UPump";
-            this.Size = new System.Drawing.Size(256, 363);
-            this.Click += new System.EventHandler(this.UPump_Click);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Size = new System.Drawing.Size(173, 189);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private USwitch uSwitch;
-        private System.Windows.Forms.Label lblName;
+
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private USwitch uswitchPump;
         private ULightControl uLight;
+        private System.Windows.Forms.Label lblName;
     }
 }

@@ -78,7 +78,6 @@ namespace WinStoreWaterSystem
             switch (direction)
             {
                 case ArrowDirection.Left:
-                    this.Size = new Size(100, 50);
                     points = new Point[]
                     {
                         new Point(0,Height/2),
@@ -92,7 +91,6 @@ namespace WinStoreWaterSystem
                     };
                     break;
                 case ArrowDirection.Right:
-                    this.Size = new Size(100, 50);
                     points = new Point[]
                     {
                         new Point(0,Height/4),
@@ -106,7 +104,6 @@ namespace WinStoreWaterSystem
                     };
                     break;
                 case ArrowDirection.Top:
-                    this.Size = new Size(50, 100);
                     points = new Point[]
                     {
                         new Point(Width/2,0),
@@ -120,7 +117,6 @@ namespace WinStoreWaterSystem
                     };
                     break;
                 case ArrowDirection.Bottom:
-                    this.Size = new Size(50, 100);
                     points = new Point[]
                     {
                         new Point(Width /2,Height),
@@ -134,7 +130,6 @@ namespace WinStoreWaterSystem
                     };
                     break;
                 case ArrowDirection.Left_Right:
-                    this.Size = new Size(100, 50);
                     points = new Point[]
                     {
                         new Point(0,Height/2),
@@ -151,7 +146,6 @@ namespace WinStoreWaterSystem
                     }; 
                     break;
                 case ArrowDirection.Top_Bottom:
-                    this.Size = new Size(50, 100);
                     points = new Point[]
                     {
                         new Point(Width/2,0),
