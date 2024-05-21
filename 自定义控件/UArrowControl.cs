@@ -148,7 +148,7 @@ namespace WinStoreWaterSystem
                         new Point(Width/5,Height - Height / 4),
                         new Point(Width/5,Height),
                         new Point(0,Height/2),
-                    };
+                    }; 
                     break;
                 case ArrowDirection.Top_Bottom:
                     this.Size = new Size(50, 100);
