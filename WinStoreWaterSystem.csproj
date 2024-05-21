@@ -86,6 +86,12 @@
     <Compile Include="自定义控件\UCWaterTank.Designer.cs">
       <DependentUpon>UCWaterTank.cs</DependentUpon>
     </Compile>
+    <Compile Include="自定义控件\UInstrumentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\UInstrumentControl.Designer.cs">
+      <DependentUpon>UInstrumentControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="自定义控件\ULightControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
